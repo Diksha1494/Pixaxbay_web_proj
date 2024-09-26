@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+h1{
+margin: 40px 0;
+    font-size: 3.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    text-align: center;
+
+    color: black;;
+
+    text-shadow: 4px 4px 8px rgb(147, 45, 198);
+    transition: transform 1s ease, text-shadow 1s ease;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 2px;
+    right: 0;
+    bottom: 0;
+    background:rgb(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.modal img {
+    max-width: 60%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+.modal-info {
+    text-align: center;
+    margin-top: 15px; 
+}
+
+.modal h2 {
+    margin: 10px 0; 
+}
+
+.modal p {
+    margin: 7px 0; 
+}
+
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 60px;
+    cursor: pointer;
+}
